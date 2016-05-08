@@ -8,7 +8,7 @@ $(document).ready(function() {
     })
   }
 
-  var queryURL = "api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=" + appID;
+  var queryURL = "api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&APPID=" + appID;
 
   $.ajax({
     url: queryURL,

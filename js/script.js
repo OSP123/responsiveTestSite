@@ -1,25 +1,12 @@
 $( document ).ready(function() {
-  // $("a[href='#top']").click(function() {
-  // 	$("html, body").animate({ scrollTop: 0 }, 500);
-  // 	return false;
-  // });
 
-  // $("a").hover(
-  // function () {
-  //   // code on hover over
-  //   $(this).css({"color": "yellow", "font-size": "24px"});
-  //   $(".header").text("banana");
-  // },
-  // function () {
-  //   // code on away from hover
-  //   $(this).css({"color": "black", "font-size": "12px"});
-  //   $(".header").text("Sass");
-  // });
+// If I put this in here, it is going to get ignored
+/* The code 
+will ignore 
+anything
+in here
+ */
+var someStr = "Hey guys, this is a random letter about stuff";
 
-  $("a.cool").on("click", function(e){
-  	$("#someButton").fadeToggle(750, "linear");
-  });
-
-  // $(".container").draggable();
-
+var someOtherChar = someStr[someStr.length - 1];
 });
