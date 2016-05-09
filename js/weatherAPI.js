@@ -6,6 +6,7 @@ $(document).ready(function() {
       navigator.geolocation.getCurrentPosition(function(position) {
       lat = position.coords.latitude;
       lon = position.coords.longitude;
+      callback(lat);
     });
   } else {
       alert("Geolocation is not supported by this browser.");
