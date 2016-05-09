@@ -19,6 +19,9 @@ $(document).ready(function() {
       lon = position.coords.longitude;
   }
 
+  alert(lat);
+  alert(lon);
+
   var queryURL = "api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&APPID=" + appID;
 
   $.ajax({
