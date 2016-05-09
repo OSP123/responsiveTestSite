@@ -2,11 +2,6 @@ $(document).ready(function() {
   var lat, lon;
   var appID = "a4b0ab90a28dc5c1f397f762eb6efe76";
 
-   function showLocation(position) {
-      lat = position.coords.latitude;
-      lon = position.coords.longitude;
-   }
-
    function errorHandler(err) {
       if(err.code == 1) {
          alert("Error: Access is denied!");
@@ -17,19 +12,12 @@ $(document).ready(function() {
       }
    }
 
-   function getLocation(){
-
-      if(navigator.geolocation){
-         var options = {timeout:60000};
-         navigator.geolocation.getCurrentPosition(showLocation, errorHandler, options);
-      }
-      
-      else{
-         alert("Sorry, browser does not support geolocation!");
-      }
-   }
-
-   getLocation();
+  navigator.geolocation.getCurrentPosition(showLocation, errorHandler, {timeout:10000});
+  
+  function callback (position) {
+      lat = position.coords.latitude;
+      lon = position.coords.longitude;
+  }
 
   var queryURL = "api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&APPID=" + appID;
 
