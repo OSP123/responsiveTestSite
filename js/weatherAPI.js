@@ -5,7 +5,6 @@ $(document).ready(function() {
    function showLocation(position) {
       lat = position.coords.latitude;
       lon = position.coords.longitude;
-      alert("Latitude : " + lat + " Longitude: " + lon);
    }
 
    function errorHandler(err) {
@@ -21,7 +20,6 @@ $(document).ready(function() {
    function getLocation(){
 
       if(navigator.geolocation){
-         // timeout at 60000 milliseconds (60 seconds)
          var options = {timeout:60000};
          navigator.geolocation.getCurrentPosition(showLocation, errorHandler, options);
       }
