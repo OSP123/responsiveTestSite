@@ -12,6 +12,7 @@ $(document).ready(function() {
     var crd = pos.coords;
     lat = crd.latitude;
     lon = crd.longitude;
+    alert(lat);
   };
 
   function error(err) {
