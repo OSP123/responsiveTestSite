@@ -12,7 +12,8 @@ $(document).ready(function() {
     console.warn('ERROR(' + err.code + '): ' + err.message);
   };
 
-  alert(lat + lon);
+  alert(lat);
+  alert(lon);
 
   navigator.geolocation.getCurrentPosition(success, error);
 
