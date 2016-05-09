@@ -12,7 +12,9 @@ $(document).ready(function() {
 
   function showPosition(position) {
       lat = position.coords.latitude;
+      alert(lat);
       lon = position.coords.longitude; 
+      alert(lon);
   }
 
   var queryURL = "api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&APPID=" + appID;
