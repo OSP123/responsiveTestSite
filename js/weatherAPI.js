@@ -20,6 +20,8 @@ function error(err) {
 
 navigator.geolocation.getCurrentPosition(success, error, options);
 
+alert(lat);
+
   // if (navigator.geolocation) {
   //     navigator.geolocation.getCurrentPosition(function(position) {
   //     lat = position.coords.latitude;
