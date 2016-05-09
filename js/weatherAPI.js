@@ -1,5 +1,6 @@
 $(document).ready(function() {
-  var lat, lon;
+  var lat;
+  var lon;
   var appID = "a4b0ab90a28dc5c1f397f762eb6efe76";
 
   var options = {
