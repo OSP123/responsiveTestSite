@@ -7,6 +7,8 @@ $(document).ready(function() {
       lat = position.coords.latitude;
       lon = position.coords.longitude;
     });
+  } else {
+      alert("Geolocation is not supported by this browser.");
   }
 
   alert(lat);
@@ -17,6 +19,6 @@ $(document).ready(function() {
     url: queryURL,
     method: 'GET'
   }).done(function(response) {
-    console.log(response)
+    console.log(response);
   });
 });
