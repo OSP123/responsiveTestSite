@@ -14,7 +14,7 @@ $(document).ready(function() {
 
   navigator.geolocation.getCurrentPosition(showLocation, errorHandler, {timeout:10000});
   
-  function callback (position) {
+  function showLocation (position) {
       lat = position.coords.latitude;
       lon = position.coords.longitude;
   }
