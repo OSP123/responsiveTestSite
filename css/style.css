@@ -20,4 +20,22 @@
     margin-right: auto;
     display: block;
 }
+
+.h1_pretty {
+    background-color: purple;
+    font-size: 32px;
+    opacity: 0.5;
+    width: 100%;
+    text-align: center;
+}
+
+.body_pretty {
+    background-color: grey;
+}
+
+.div_pretty {
+    background-color: white;
+    color: orange;
+    font-size: 22px;
+}
     

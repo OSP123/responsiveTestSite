@@ -1,12 +1,14 @@
 $( document ).ready(function() {
-
-// If I put this in here, it is going to get ignored
-/* The code 
-will ignore 
-anything
-in here
- */
-var someStr = "Hey guys, this is a random letter about stuff";
-
-var someOtherChar = someStr[someStr.length - 1];
+	$(".changeAdd").click(function () {
+		$("h1").addClass("potato");
+	});
+	$(".changeRemove").click(function () {
+		$("h1").removeClass("potato");
+	});
+	$(".theme1").click(function () {
+		$("h1").toggleClass("h1_pretty");
+		$("body").toggleClass("body_pretty");
+		$("div").toggleClass("div_pretty");
+	});
+	$(".cool").attr("href", "https://www.google.com");
 });
