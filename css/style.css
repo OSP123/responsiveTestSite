@@ -25,14 +25,27 @@ img {
 
 .home_race_image {
     display: inline-block;
-    margin: 2em 1em 0 2em;
     padding: 0;
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
 }
 
+/* The element to apply the animation to */
 .home_races_container {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.home_races_container h1 {
+  color: #EFEFEF;
+}
+
+.home_race_image_link {
+  display:inline-block;
+  position: relative;
+}
+
 /* General Rules End */
 
 /* Mobile Screen Size Begin */
@@ -45,7 +58,9 @@ img {
     width: 100%;
   }
 
-
+  .home_race_image {
+    margin: 1em 1em 0 1em;
+  }
   /* Home Page End */
 }
 
@@ -65,8 +80,7 @@ img {
   }
 
   .home_race_image {
-    border-radius: 100px;
-    width: 150px;
+    margin: 2em 1em 0 2em;
   }
 
   /* Home Page End */
