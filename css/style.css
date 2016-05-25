@@ -1,3 +1,81 @@
+/* General Rules Begin */
+
+body {
+    font-family: 'Cinzel', serif;
+    background-image: url(../images/imperial_guard_war.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.home_container {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(71, 74, 70, 0.7);
+}
+
+.header {
+  text-align: center;
+  margin: 0;
+}
+
+.home_race_image {
+    display: inline-block;
+    margin: 2em 1em 0 2em;
+    padding: 0;
+}
+
+.home_races_container {
+    margin-left: auto;
+    margin-right: auto;
+}
+/* General Rules End */
+
+/* Mobile Screen Size Begin */
+
+@media only screen and (max-width: 599px) {
+
+  /* Home Page Begin */
+
+  .home_container {
+    width: 100%;
+  }
+
+
+  /* Home Page End */
+}
+
+/* Mobile Screen Size End */
+
+/* Desktop Screen Size Begin */
+
+@media only screen and (min-width: 600px) {
+
+  /* Home Page Begin */
+
+  .home_races_container {
+    width: 70%;
+    position: relative;
+    top: 5em;
+    padding: 21px;
+  }
+
+  .home_race_image {
+    border-radius: 100px;
+    width: 150px;
+  }
+
+  /* Home Page End */
+}
+
+/* Desktop Screen Size End */
+
+
+
 .fruitTart {
 	background-color: orange;
 	color: white;
