@@ -1,13 +1,15 @@
 /* General Rules Begin */
 
+* { margin: 0; padding: 0; }
+
 html {
   height: 100%;
 }
 
 body {
     font-family: 'Cinzel', serif;
-    margin: 0;
     height: 100%;
+    color: white;
 }
 
 img {
@@ -15,14 +17,59 @@ img {
 }
 
 figure, figcaption {
-  margin: 0;
-  padding: 0;
   text-decoration: none !important;
   color: white;
 }
 
 a {
   text-decoration: none;
+  color: white;
+}
+
+/* Navigation CSS */
+
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    overflow: auto;
+    background-color: #333;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #111;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+
+/* Navigation CSS End */
+
+.left-container, .right-container {
+  width: 49.5%;
+  float: left;
+  height: 100%;
+  color: white;
+  text-align: center;
+}
+
+.right-container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .site_container {
@@ -42,6 +89,7 @@ a {
 .race_section {
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   height: 100%;
 }
 
@@ -79,46 +127,74 @@ a {
   position: relative;
 }
 
-#chaos {
+#chaos .right-container {
   background-image: url(../images/chaos.jpg);
 }
 
-#eldar {
+#eldar .right-container {
   background-image: url(../images/eldar.jpg);
 }
 
-#necron {
+#necron .right-container {
   background-image: url(../images/necron.jpg);
 }
 
-#ork {
+#ork .right-container {
   background-image: url(../images/ork_ship.jpg);
 }
 
-#imperial_guard {
+#imperial_guard .right-container {
   background-image: url(../images/imperial_guard_war.jpg);
 }
 
-#sister_of_battle {
+#sister_of_battle .right-container {
   background-image: url(../images/sisters.jpg);
 }
 
-#imperial_knight {
+#imperial_knight .right-container {
   background-image: url(../images/knights.jpg);
 }
 
-#space_marine {
+#space_marine .right-container {
   background-image: url(../images/space_marine_army.jpg);
 }
 
-#tau {
+#tau .right-container {
   background-image: url(../images/tau_army.jpg);
 }
 
-#tyranid {
+#tyranid .right-container {
   background-image: url(../images/tyranic_vs_space_marine.jpg);
 }
 /* General Rules End */
+
+@media only screen and (max-width: 1280px) {
+
+  ul.topnav li:not(:first-child) {display: none;}
+
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+
+  ul.topnav.responsive {position: relative;}
+
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+
+}
 
 /* Mobile Screen Size Begin */
 
@@ -126,21 +202,21 @@ a {
 
   /* Home Page Begin */
 
+  .left-container, .right-container {
+    width: 100%;
+    display: block;
+    height: 50%;
+  }
+
   .home_container {
     width: 100%;
   }
 
   .home_race_image {
-    display: block;
-    margin: 2em auto;
-    width: 200px;
-    height: 200px;
+    margin: 1em 1em;
+    width: 100px;
+    height: 100px;
   }
-
-  .home_race_image_link {
-    display: block;
-  }
-
 
   /* Home Page End */
 }
@@ -159,9 +235,9 @@ a {
   }
 
   .home_race_image {
-    margin: 2em 0em 0 2em;
-    width: 150px;
-    height: 150px;
+    margin: 1em 0em 0 1em;
+    width: 130px;
+    height: 130px;
   }
 
 }
@@ -185,52 +261,8 @@ a {
   .home_race_image {
     margin: 2em 1em 0 2em;
   }
-
   /* Home Page End */
 }
 
 /* Desktop Screen Size End */
-
-
-
-.fruitTart {
-	background-color: orange;
-	color: white;
-	padding: 40px;
-}
-
-/* Random Quote Machine Begin CSS */
-
-.quote_insert {
-	text-align: center;
-    font-family: monospace;
-    font-weight: 100;
-    margin-top: 7em;
-    width: 100%;
-}
-#quote_button {
-	background-color: white;
-    padding: 1em;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
-.h1_pretty {
-    background-color: purple;
-    font-size: 32px;
-    opacity: 0.5;
-    width: 100%;
-    text-align: center;
-}
-
-.body_pretty {
-    background-color: grey;
-}
-
-.div_pretty {
-    background-color: white;
-    color: orange;
-    font-size: 22px;
-}
-    
+ 

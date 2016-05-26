@@ -17,7 +17,6 @@ $( document ).ready(function() {
 		});
     });
 
-    $(document).ready(function(){
 	$('a[href^="#"]').on('click',function (e) {
 	    e.preventDefault();
 
@@ -30,5 +29,9 @@ $( document ).ready(function() {
 	        window.location.hash = target;
 	    });
 	});
-});
+
+	$("#icon_link").click(function() {
+    	$(".topnav").toggleClass("responsive");
+	})
+
 });
