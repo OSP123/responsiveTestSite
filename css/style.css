@@ -14,14 +14,38 @@ img {
     max-width: 100%;
 }
 
+figure, figcaption {
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site_container {
+  background-color: black;
+}
+
 .home_container {
   margin-left: auto;
   margin-right: auto;
   background-color: rgba(71, 74, 70, 0.7);
 }
 
-.container {
+.home_container {
   background-image: url(../images/imperial_guard_war.jpg);
+}
+
+.race_section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.container {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -40,10 +64,10 @@ img {
     height: 150px;
 }
 
-/* The element to apply the animation to */
 .home_races_container {
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .home_races_container h1 {
@@ -55,6 +79,45 @@ img {
   position: relative;
 }
 
+#chaos {
+  background-image: url(../images/chaos.jpg);
+}
+
+#eldar {
+  background-image: url(../images/eldar.jpg);
+}
+
+#necron {
+  background-image: url(../images/necron.jpg);
+}
+
+#ork {
+  background-image: url(../images/ork_ship.jpg);
+}
+
+#imperial_guard {
+  background-image: url(../images/imperial_guard_war.jpg);
+}
+
+#sister_of_battle {
+  background-image: url(../images/sisters.jpg);
+}
+
+#imperial_knight {
+  background-image: url(../images/knights.jpg);
+}
+
+#space_marine {
+  background-image: url(../images/space_marine_army.jpg);
+}
+
+#tau {
+  background-image: url(../images/tau_army.jpg);
+}
+
+#tyranid {
+  background-image: url(../images/tyranic_vs_space_marine.jpg);
+}
 /* General Rules End */
 
 /* Mobile Screen Size Begin */
