@@ -68,16 +68,46 @@ img {
   }
 
   .home_race_image {
-    margin: 1em 1em 0 1em;
+    display: block;
+    margin: 2em auto;
+    width: 200px;
+    height: 200px;
   }
+
+  .home_race_image_link {
+    display: block;
+  }
+
+
   /* Home Page End */
 }
 
 /* Mobile Screen Size End */
 
+/* Tablet Screen Size Begin */
+
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  
+  .home_races_container {
+    width: 70%;
+    position: relative;
+    top: 5em;
+    min-width: 600px;
+  }
+
+  .home_race_image {
+    margin: 2em 0em 0 2em;
+    width: 150px;
+    height: 150px;
+  }
+
+}
+
+/* Tablet Screen Size End */
+
 /* Desktop Screen Size Begin */
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
 
   /* Home Page Begin */
 
@@ -86,6 +116,7 @@ img {
     position: relative;
     top: 5em;
     padding: 21px;
+    min-width: 900px;
   }
 
   .home_race_image {
