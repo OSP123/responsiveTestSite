@@ -1,11 +1,13 @@
 /* General Rules Begin */
 
+html {
+  height: 100%;
+}
+
 body {
     font-family: 'Cinzel', serif;
-    background-image: url(../images/imperial_guard_war.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    margin: 0;
+    height: 100%;
 }
 
 img {
@@ -16,6 +18,13 @@ img {
   margin-left: auto;
   margin-right: auto;
   background-color: rgba(71, 74, 70, 0.7);
+}
+
+.container {
+  background-image: url(../images/imperial_guard_war.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
 }
 
 .header {
