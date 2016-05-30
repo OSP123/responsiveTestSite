@@ -26,13 +26,19 @@ a {
   color: white;
 }
 
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
 /* Navigation CSS */
 
 /* Remove margins and padding from the list, and add a black background color */
 ul.topnav {
     list-style-type: none;
     overflow: auto;
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.81);
 }
 
 /* Float the list items side by side */
@@ -218,6 +224,14 @@ ul.topnav li.icon {display: none;}
     height: 100px;
   }
 
+  .left-container > div {
+    font-size: 11px;
+    position: relative;
+    top: 19px;
+  }
+
+
+
   /* Home Page End */
 }
 
@@ -240,6 +254,11 @@ ul.topnav li.icon {display: none;}
     height: 130px;
   }
 
+  .left-container > div {
+    position: relative;
+    top: 11em;
+  }
+
 }
 
 /* Tablet Screen Size End */
@@ -251,7 +270,7 @@ ul.topnav li.icon {display: none;}
   /* Home Page Begin */
 
   .home_races_container {
-    width: 70%;
+    width: 80%;
     position: relative;
     top: 5em;
     padding: 21px;
@@ -260,6 +279,11 @@ ul.topnav li.icon {display: none;}
 
   .home_race_image {
     margin: 2em 1em 0 2em;
+  }
+
+  .left-container > div {
+    position: relative;
+    top: 11em;
   }
   /* Home Page End */
 }
