@@ -30,6 +30,10 @@ $( document ).ready(function() {
 	    });
 	});
 
+	$(".topnav a").click(function(){
+		$(".topnav").removeClass("responsive");
+	})
+
 	$("#icon_link").click(function() {
     	$(".topnav").toggleClass("responsive");
 	})
