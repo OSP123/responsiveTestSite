@@ -227,9 +227,9 @@ ul.topnav li.icon {display: none;}
   .left-container > div {
     font-size: 11px;
     position: relative;
-    top: 19px;
+    top: 50%;
+    transform: translateY(-50%);
   }
-
 
 
   /* Home Page End */
