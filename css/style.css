@@ -174,7 +174,7 @@ ul.topnav li.icon {display: none;}
 }
 /* General Rules End */
 
-@media only screen and (max-width: 1280px) {
+@media handheld, screen and (max-width: 1280px) {
 
   ul.topnav li:not(:first-child) {display: none;}
 
@@ -204,7 +204,7 @@ ul.topnav li.icon {display: none;}
 
 /* Mobile Screen Size Begin */
 
-@media only screen and (max-width: 599px) {
+@media handheld, screen and (max-width: 599px) {
 
   /* Home Page Begin */
 
