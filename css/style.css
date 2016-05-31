@@ -219,9 +219,9 @@ ul.topnav li.icon {display: none;}
   }
 
   .home_race_image {
-    margin: 1em 1em;
-    width: 100px;
-    height: 100px;
+    margin: 0em 1em;
+    width: 87px;
+    height: 87px;
   }
 
   .left-container > div {
