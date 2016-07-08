@@ -11,7 +11,7 @@ $( document ).ready(function() {
     }, function(){
         $(this).stop().animate({'bottom': '0px'}, 500);
         $(".container").css({
-			"background-image": "url('images/imperial_guard_war.jpg')",
+			"background-image": "url('assets/images/imperial_guard_war.jpg')",
 			"-webkit-transition": "background-image 0.7s ease-in-out",
 			"transition": "background-image 0.7s ease-in-out"
 		});
@@ -37,8 +37,5 @@ $( document ).ready(function() {
 	$("#icon_link").click(function() {
     	$(".topnav").toggleClass("responsive");
 	})
-
-
-
 
 });
