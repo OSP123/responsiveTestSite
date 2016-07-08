@@ -216,6 +216,7 @@ ul.topnav li.icon {display: none;}
 
   .home_container {
     width: 100%;
+    padding-top: 70px;
   }
 
   .home_race_image {

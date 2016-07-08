@@ -30,12 +30,15 @@ $( document ).ready(function() {
 	    });
 	});
 
-	$(".topnav a").click(function(){
-		$(".topnav").removeClass("responsive");
+	$(".race_link").click(function() {
+		$(".topnav").toggleClass("responsive");
 	})
 
 	$("#icon_link").click(function() {
     	$(".topnav").toggleClass("responsive");
 	})
+
+
+
 
 });
