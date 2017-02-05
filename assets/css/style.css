@@ -174,34 +174,6 @@ ul.topnav li.icon {display: none;}
 }
 /* General Rules End */
 
-@media handheld, screen and (max-width: 1280px) {
-
-  ul.topnav li:not(:first-child) {display: none;}
-
-  ul.topnav li.icon {
-    float: right;
-    display: inline-block;
-  }
-
-  ul.topnav.responsive {position: relative;}
-
-  ul.topnav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  
-  ul.topnav.responsive li {
-    float: none;
-    display: inline;
-  }
-  ul.topnav.responsive li a {
-    display: block;
-    text-align: left;
-  }
-
-}
-
 /* Mobile Screen Size Begin */
 
 @media handheld, screen and (max-width: 599px) {
@@ -220,7 +192,7 @@ ul.topnav li.icon {display: none;}
   }
 
   .home_race_image {
-    margin: 0em 1em;
+    margin: 0 1em;
     width: 87px;
     height: 87px;
   }
@@ -231,12 +203,10 @@ ul.topnav li.icon {display: none;}
     top: 50%;
     transform: translateY(-50%);
   }
-
-
   /* Home Page End */
 }
 
-/* Mobile Screen Size End */
+
 
 /* Tablet Screen Size Begin */
 
@@ -290,4 +260,34 @@ ul.topnav li.icon {display: none;}
 }
 
 /* Desktop Screen Size End */
+
+/* Mobile Screen Size End */
+
+@media handheld, screen and (max-width: 1280px) {
+
+  ul.topnav li:not(:first-child) {display: none;}
+
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+
+  ul.topnav.responsive {position: relative;}
+
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+
+}
  
