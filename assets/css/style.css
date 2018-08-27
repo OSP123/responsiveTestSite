@@ -142,19 +142,19 @@ ul.topnav li.icon {display: none;}
 }
 
 #necron .right-container {
-  background-image: url(../images/necron.jpg);
+  background-image: url(../images/necrons-background.jpg);
 }
 
 #ork .right-container {
-  background-image: url(../images/ork_ship.jpg);
+  background-image: url(../images/orks.jpg);
 }
 
 #imperial_guard .right-container {
-  background-image: url(../images/imperial_guard_war.jpg);
+  background-image: url(../images/imperial-guard-background.jpg);
 }
 
 #sister_of_battle .right-container {
-  background-image: url(../images/sisters.jpg);
+  background-image: url(../images/sisters-of-battle-background.jpg);
 }
 
 #imperial_knight .right-container {
@@ -261,11 +261,9 @@ ul.topnav li.icon {display: none;}
 
 /* Desktop Screen Size End */
 
-/* Mobile Screen Size End */
-
 @media handheld, screen and (max-width: 1280px) {
 
-  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li {display: none;}
 
   ul.topnav li.icon {
     float: right;

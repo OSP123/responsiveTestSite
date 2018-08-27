@@ -35,7 +35,7 @@ $( document ).ready(function() {
 	})
 
 	$("#icon_link").click(function() {
-    	$(".topnav").toggleClass("responsive");
+    $(".topnav").toggleClass("responsive");
 	})
 
 });
